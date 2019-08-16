@@ -1,0 +1,56 @@
+html
+{
+  overflow-x: hidden;
+}
+
+body
+{
+  font-family: 'Bree Serif', serif;
+}
+
+.landing
+{
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom right, #e70e17, #000000);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 550px)
+{
+     .big-container {
+         display: none;
+     }
+ }
+
+ @media (min-width: 550px)
+ {
+     .small-container {
+         display: none;
+     }
+ }
+
+ /* Responsive iFrame */
+ .responsive-iframe-container
+ {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+
+ .responsive-iframe-container iframe,
+ .vresponsive-iframe-container object,
+ .vresponsive-iframe-container embed
+ {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
